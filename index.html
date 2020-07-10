@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
@@ -26,6 +27,7 @@ body, html {
 .w3-bar .w3-button {
   padding: 16px;
 }
+.mySlides {display:none;}
 </style>
 <body>
 
@@ -77,7 +79,7 @@ body, html {
 
 <!-- About Section -->
 <div class="w3-container" style="padding:128px 16px" id="about">
-  <h1 class="w3-center">ABOUT THE COMPANY</h1>
+  <h1 class="w3-center">ABOUT THE GREEN OFFICE</h1>
   <p class="w3-center w3-large">Key features of our company</p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-quarter">
@@ -112,12 +114,42 @@ body, html {
       <h5>Green Office produces recycled pencil cases with a solar-powered phone charger. The pencil case is 8.25” x 2.75”, and has a solar panel charger of 7” x 2”. The case is made of recycled plastic to promote sustainability. For vanity reasons, the solar panel has a cover to hide it when not in use and pencil cases come in a variety of colors. Per each charge, phone batteries have an average “talk time” of 5-7 hours, which is less than a typical school or work day. Therefore, including a solar-powered charger will help if one’s phone battery dies and there is no access to an outlet. </h5>
       <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> Find in Stores</a></p>
     </div>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="Product.png" alt="Product" width="700" height="394">
+    <div class="w3-col m6 w3-content w3-display-container">
+      <img class="mySlides w3-round-xxlarge" src="Product.png"  style="width:100%">
+      <img class="mySlides w3-round-xxlarge" src="Product2.png" style="width:100%">
+      <img class="mySlides w3-round-xxlarge" src="Product3.png" style="width:100%">
+      <img class="mySlides w3-round-xxlarge" src="Product4.png" style="width:100%">
+      <img class="mySlides w3-round-xxlarge" src="Product6.png" style="width:100%">
+
+      <button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    <!--  <img class="w3-image w3-round-large" src="Product.png" alt="Product" width="700" height="394"> -->
     </div>
   </div>
 </div>
 </div>
+
+<!-- Slideshow-->
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+    </script>
+
 <!-- Team Section -->
 
 <div class="w3-container" style="padding:128px 16px" id="team">
@@ -129,7 +161,7 @@ body, html {
         <div class="w3-container">
           <h3>Ava Wagner</h3>
           <p class="w3-opacity">She/Her/Hers</p>
-          <p>A third-year Biology student, aspiring to work in Sales or Marketing for a pharmaceutical company or medical device company.</p>
+          <p>A third-year Biology student, aspiring to work in Sales or Marketing for a pharmaceutical company.</p>
           <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
         </div>
       </div>
@@ -204,6 +236,7 @@ body, html {
 </div>
 
 <!-- Contact Section -->
+<!--<div style="background-color:rgb(221, 214, 211)"> -->
 <div class="w3-container" style="padding:128px 16px" id="contact">
   <h1 class="w3-center">CONTACT</h1>
   <p class="w3-center w3-large"> Lets get in touch! Sign up for special deals :)</p>
