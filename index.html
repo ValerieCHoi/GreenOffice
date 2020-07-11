@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title> Green Office | Conveniently Green</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -34,7 +34,7 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">The Green Office</a>
+    <a href="#home" class="w3-bar-item w3-button w3-wide">Green Office</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
@@ -63,9 +63,9 @@ body, html {
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
     <span class="w3-jumbo w3-hide-small">Conveniently Green</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Conveniently Green </span><br>
-    <span class="w3-xlarge">Change your impact on the environment</span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Start Here</a></p>
+    <!-- <span class="w3-xxlarge w3-hide-large w3-hide-medium">Conveniently Green </span><br>-->
+    <span class="w3-xxlarge">Focus your impact on the environment</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn More</a></p>
   </div>
   <div class="w3-display-bottomleft w3-text-white w3-large" style="padding:24px 48px">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -79,7 +79,7 @@ body, html {
 
 <!-- About Section -->
 <div class="w3-container" style="padding:128px 16px" id="about">
-  <h1 class="w3-center">ABOUT THE GREEN OFFICE</h1>
+  <h1 class="w3-center">ABOUT GREEN OFFICE</h1>
   <p class="w3-center w3-large">Key features of our company</p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-quarter">
@@ -123,7 +123,6 @@ body, html {
 
       <button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
       <button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-    <!--  <img class="w3-image w3-round-large" src="Product.png" alt="Product" width="700" height="394"> -->
     </div>
   </div>
 </div>
@@ -235,27 +234,34 @@ body, html {
   </div>
 </div>
 
-<!-- Contact Section -->
-<!--<div style="background-color:rgb(221, 214, 211)"> -->
-<div class="w3-container" style="padding:128px 16px" id="contact">
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
   <h1 class="w3-center">CONTACT</h1>
-  <p class="w3-center w3-large"> Lets get in touch! Sign up for special deals :)</p>
-  <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> City, US</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (###)###-####</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: theGreenOffice@mail.com</p>
-    <br>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p>
-        <button class="w3-button w3-black" type="submit">
-          <i class="fa fa-paper-plane"></i> SUBMIT
+  <h4 class="w3-center"><em>Lets get in touch! Sign up for exclusive deals :)</em></h4>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="map.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> CITY, US<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 0000000<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: thegreenoffice@mail.com<br>
+      </div>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SIGN UP
         </button>
-      </p>
-    </form>
+      </form>
+    </div>
   </div>
-</div>
 </div>
 
 <!-- Footer -->
@@ -270,7 +276,7 @@ body, html {
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-white">w3.css</a></p>
+
   <p> Demo Website: Team 5's Project for BUS 346
   </p>
 </footer>
